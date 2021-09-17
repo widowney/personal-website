@@ -303,26 +303,25 @@
           </div>
           <div class="modal-body">
             <p class="lead">This form is still under construction.</p>
-            <form action="contact.php">
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  First Name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact.php">
+              <label for="Name" class="fcf-label">Your name</label>
+              <div class="fcf-input-group">
+                  <input type="text" id="Name" name="Name" class="fcf-form-control" required>
               </div>
-              <div class="mb-3">
-                <label for="last-name" class="col-form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last-name" />
+          <div class="fcf-form-group">
+              <label for="Email" class="fcf-label">Your email address</label>
+              <div class="fcf-input-group">
+                  <input type="email" id="Email" name="Email" class="fcf-form-control" required>
               </div>
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
+          <div class="fcf-form-group">
+              <label for="Message" class="fcf-label">Your message</label>
+              <div class="fcf-input-group">
+                  <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
               </div>
-              <div class="mb-3">
-                <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
-              </div>
-            </form>
+          </div>
+          <div class="fcf-form-group">
+              <button type="submit" id="button" class="btn btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+          </div>
           </div>
           <div class="modal-footer">
             <button
@@ -332,7 +331,6 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
           </div>
         </div>
       </div>
