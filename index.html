@@ -7,6 +7,11 @@
   <link rel="icon" href="icons/android-chrome-512x512.png">
   <link rel="stylesheet" href="style.css">
   <title>Will Downey</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+  <style>
+  </style>
 </head>
 <body>
   <div class="header">
@@ -40,7 +45,20 @@
         </div>
       </a>
     </div>
+    <div id="map"></div>
   </div>
+  <script>
+	// TO MAKE THE MAP APPEAR YOU MUST
+	// ADD YOUR ACCESS TOKEN FROM
+	// https://account.mapbox.com
+  mapboxgl.accessToken = 'pk.eyJ1Ijoid2lsbGQyMCIsImEiOiJja3UzMHVqcXUxcHRsMm5vcWplbW9vZWlqIn0.FjGX5SKRSWDiQKRK2jFEzg';
+    const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-74.5, 40], // starting position [lng, lat]
+      zoom: 9 // starting zoom
+  });
+  </script>
   <div class="footer">
   </div>
   

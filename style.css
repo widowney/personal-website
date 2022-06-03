@@ -16,6 +16,7 @@ body {
   position: fixed;
   width: 100%;
   display: block;
+  background-color: white;
 }
 
 .header p {
@@ -130,4 +131,10 @@ p, a {
 #portfolio:hover {
   transform: scale(1.05);
   opacity: 0.6;
+}
+
+#map {
+  margin-top: 2rem;
+  height: 10rem;
+  width: 100%;
 }
