@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-theme" id="html">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,6 +50,13 @@
     </div>
     
     <div id="map"></div>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+    </label>
+    <em>Enable Dark Mode!</em>
+  </div>
   </div>
   <script>
 	// TO MAKE THE MAP APPEAR YOU MUST
@@ -63,6 +70,7 @@
       zoom: 14 // starting zoom
   });
   </script>
+  <script src="scripts/themes.js"></script>
   <footer class="footer">
     <p>© 2022 William Downey</p>
   </footer>
