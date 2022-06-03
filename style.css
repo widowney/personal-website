@@ -23,6 +23,11 @@ body {
   padding: 1rem;
 }
 
+.header p:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
 .text {
   font-weight: 500;
   font-size: 1.2rem;
@@ -34,29 +39,36 @@ p, a {
   margin: 0;
 }
 
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 1.6rem 1.6em 1.6rem;
+
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    width: 60%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 50%;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 33.33%;
+    width: 33.3%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .main {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 25%;
   }
 }
@@ -72,7 +84,7 @@ p, a {
 }
 
 #title-picture {
-  width: 30%;
+  width: 70%;
   height: 30%;
   border-radius: 50%;
 }
@@ -82,9 +94,40 @@ p, a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%
+  width: 80%
 }
 
 .icon {
   width: 1.5rem;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  opacity: 0.6;
+}
+
+.main-links {
+  width: 100%;
+  height: 100%;
+}
+
+#portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background-image: url(images/portfolio.jpg);
+  border-radius: .5rem;
+  opacity: 0.8;
+}
+
+#portfolio p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+#portfolio:hover {
+  transform: scale(1.05);
+  opacity: 0.6;
 }
