@@ -134,7 +134,12 @@ p, a {
 }
 
 #map {
+  border-radius: .5rem;
   margin-top: 2rem;
   height: 10rem;
   width: 100%;
+}
+
+#map:hover {
+  transform: scale(1.05);
 }
