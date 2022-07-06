@@ -7,6 +7,7 @@ const Header = () => {
         <Navbar
         fluid={true}
         rounded={true}
+        className="z-10 fixed"
         >
         <Navbar.Brand href="https://flowbite.com/">
             <img
