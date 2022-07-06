@@ -7,16 +7,11 @@ const Header = () => {
         <Navbar
         fluid={true}
         rounded={true}
-        className="z-10 fixed"
+        className="z-10 fixed shadow-md "
         >
-        <Navbar.Brand href="https://flowbite.com/">
-            <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite Logo"
-            />
-            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite
+        <Navbar.Brand href="#">
+            <span className="self-center whitespace-nowrap text-xl dark:text-white text-hover-blue font-bold hover:text-slate-800">
+            Will Downey
             </span>
         </Navbar.Brand>
         <Navbar.Toggle />
