@@ -1,6 +1,4 @@
 import React from 'react';
-import darkMode from '../images/darkmode.svg';
-import { Button } from 'flowbite-react';
 
 const ThemeBtn: React.FunctionComponent = () => {
     return (
