@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="h-screen w-full" id="About">
             <span className="text-transparent">.</span>
-            <div className=" border-2 p-4 shadow-md rounded-md xl:mr-48 xl:ml-48 mt-16">
+            <div className=" border-2 p-4 shadow-md rounded-md xl:mr-48 xl:ml-48 m-4 mt-16">
                 <h1 className="text-black text-2xl dark:text-white border-b-2 font-bold mb-10">About</h1>
                 <div>
                     <h2 className="text-black text-xl dark:text-white border-b-2">Skills:</h2>

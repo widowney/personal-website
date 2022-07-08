@@ -3,7 +3,7 @@ import { Timeline } from 'flowbite-react';
 
 const Resume = () => {
     return (
-        <div className="h-screen m-auto flex align-center justify-center" id="Resume">
+        <div className="h-screen flex align-center justify-center m-4" id="Resume">
             <div className="mt-20">
                 <h1 className="m-2 text-black text-2xl dark:text-white border-b-2 font-bold">Experience</h1>
                 <Timeline>
