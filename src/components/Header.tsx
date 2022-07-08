@@ -28,7 +28,7 @@ const Header: React.FunctionComponent = () => {
                     <Navbar.Link href="#About">
                     About
                     </Navbar.Link>
-                    <Navbar.Link href=".Portfolio">
+                    <Navbar.Link href="#Portfolio">
                     Portfolio
                     </Navbar.Link>
                     <Navbar.Link href="#Resume">
