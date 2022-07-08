@@ -8,7 +8,9 @@ function App() {
     <div className="App h-full">
       <Header />
       <ThemeBtn />
-      <ParticlesContainer />
+      <div className="">
+        <ParticlesContainer />
+      </div>
     </div>
   );
 }
