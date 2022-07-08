@@ -13,8 +13,8 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
         console.log(main);
     await loadFull(main);
     };
-    const bgColor = darkTheme ? '#000000' : '#ffffff';
-    const particleColor = darkTheme ? '#ffffff' : '#000000';
+    const bgColor = darkTheme ? '#1f2937' : '#ffffff';
+    const particleColor = darkTheme ? '#ffffff' : '#1f2937';
     return (
             <Particles
                 className="h-full"
@@ -41,7 +41,7 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                         },
@@ -75,7 +75,7 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
                             enable: true,
                             area: 800,
                         },
-                        value: 40,
+                        value: 100,
                         },
                         opacity: {
                         value: 0.5,
