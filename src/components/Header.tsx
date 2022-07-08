@@ -20,7 +20,7 @@ const Header: React.FunctionComponent = () => {
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Navbar.Link
-                    href="/navbars"
+                    href="#"
                     active={true}
                     >
                     Home
