@@ -12,4 +12,10 @@ root.render(
   </React.StrictMode>
 );
 
+const body = document.querySelector('body');
+if(body !== null) {
+  body.classList.add('dark:bg-gray-800');
+}
+
+
 
