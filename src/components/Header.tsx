@@ -3,6 +3,13 @@ import { Navbar } from 'flowbite-react';
 import WD from '../images/WD.svg';
 
 const Header: React.FunctionComponent = () => {
+    // listenScrollEvent = () => {
+
+    // }
+
+    // const setActiveLink = (e) => {
+
+    // }
     console.log(WD);
     return (
         <div className="fixed w-full z-10">
@@ -19,10 +26,7 @@ const Header: React.FunctionComponent = () => {
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
-                    <Navbar.Link
-                    href="#"
-                    active={true}
-                    >
+                    <Navbar.Link href="#">
                     Home
                     </Navbar.Link>
                     <Navbar.Link href="#About">
@@ -34,7 +38,7 @@ const Header: React.FunctionComponent = () => {
                     <Navbar.Link href="#Resume">
                     Resume
                     </Navbar.Link>
-                    <Navbar.Link href=".Contact">
+                    <Navbar.Link href="#Contact">
                     Contact
                     </Navbar.Link>
                 </Navbar.Collapse>
