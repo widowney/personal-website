@@ -1,9 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import ThemeBtn from './components/ThemeBtn';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App h-full">
+      <Header />
+      <ThemeBtn />
     </div>
   );
 }
