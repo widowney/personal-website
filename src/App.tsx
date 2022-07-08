@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import ThemeBtn from './components/ThemeBtn';
 import Home from './pages/Home';
+import About from './pages/About';
+import Resume from './pages/Resume';
 
 const App:React.FunctionComponent = () => {
   const [darkTheme, setDarkTheme] = React.useState(false);
@@ -17,6 +19,8 @@ const App:React.FunctionComponent = () => {
         darkTheme={darkTheme}
         setDarkTheme={setDarkTheme}
       />
+      <About />
+      <Resume />
     </div>
   );
 }
