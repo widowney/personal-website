@@ -1,16 +1,22 @@
 import React from 'react';
 import Header from './components/Header';
 import ThemeBtn from './components/ThemeBtn';
-import ParticlesContainer from './components/Particles';
+import Home from './pages/Home';
 
-function App() {
+const App:React.FunctionComponent = () => {
+  const [darkTheme, setDarkTheme] = React.useState(false);
+
   return (
     <div className="App h-full">
       <Header />
-      <ThemeBtn />
-      <div className="">
-        <ParticlesContainer />
-      </div>
+      <ThemeBtn 
+        darkTheme={darkTheme}
+        setDarkTheme={setDarkTheme}
+      />
+      <Home 
+        darkTheme={darkTheme}
+        setDarkTheme={setDarkTheme}
+      />
     </div>
   );
 }

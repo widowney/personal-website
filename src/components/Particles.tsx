@@ -3,31 +3,33 @@ import Particles from 'react-tsparticles';
 import { loadFull } from "tsparticles";
 import { Engine } from 'tsparticles-engine';
 
-const ParticlesContainer: React.FunctionComponent = () => {
+type Props = {
+    darkTheme: boolean;
+    setDarkTheme: (darkTheme: boolean) => void;
+}
+
+const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
     const particlesInit = async (main: Engine) => {
         console.log(main);
     await loadFull(main);
     };
-
+    const bgColor = darkTheme ? '#000000' : '#ffffff';
+    const particleColor = darkTheme ? '#ffffff' : '#000000';
     return (
-        <div className="absolute">
             <Particles
+                className="h-full"
                 id="tsparticles"
                 init={particlesInit}
                 options={{
-                    fullScreen: {enable: false, zIndex: 0},
+                    fullScreen: {enable: false, zIndex: -10},
                     background: {
                         color: {
-                        value: "white",
+                        value: bgColor,
                         },
                     },
                     fpsLimit: 120,
                     interactivity: {
                         events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
                         onHover: {
                             enable: true,
                             mode: "repulse",
@@ -46,10 +48,10 @@ const ParticlesContainer: React.FunctionComponent = () => {
                     },
                     particles: {
                         color: {
-                        value: "#000000",
+                        value: particleColor,
                         },
                         links: {
-                        color: "#000000",
+                        color: particleColor,
                         distance: 150,
                         enable: true,
                         opacity: 0.5,
@@ -88,7 +90,6 @@ const ParticlesContainer: React.FunctionComponent = () => {
                     detectRetina: true,
                 }}
             />
-        </div> 
     );
 }
 

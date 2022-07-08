@@ -1,10 +1,16 @@
 import React from 'react';
 
-const ThemeBtn: React.FunctionComponent = () => {
+type Props = {
+    darkTheme: boolean;
+    setDarkTheme: (darkTheme: boolean) => void;
+}
+
+const ThemeBtn = ({darkTheme, setDarkTheme}: Props) => {
     return (
-        <button className="fixed bottom-0 right-0 mb-2 mr-2 bg-blue-700 rounded-full h-12 opacity-80" onClick={() => {
+        <button className="fixed bottom-0 right-0 mb-2 mr-2 bg-blue-700 rounded-full h-12 opacity-80 z-10" onClick={() => {
             const html = document.querySelector('html');
             html?.classList.toggle('dark');
+            setDarkTheme(!darkTheme);
         }
         }>
             <svg xmlns="http://www.w3.org/2000/svg" className="fill-black h-12 w-12 dark:fill-white opacity-100">
