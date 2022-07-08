@@ -9,7 +9,7 @@ type Props = {
 const Home = ({darkTheme, setDarkTheme}: Props) => {
     return (
         <div className="App flex align-center justify-center h-3/4">
-            <div className="absolute -z-10">
+            <div className="absolute -z-10 h-3/4">
                 <ParticlesContainer 
                     darkTheme={darkTheme}
                     setDarkTheme={setDarkTheme}
