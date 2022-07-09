@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className="min-h-screen w-full" id="About">
+        <div className="min-h-3/4 w-full" id="About">
             <span className="text-transparent">.</span>
             <div className=" border-2 p-4 shadow-md rounded-md xl:mr-48 xl:ml-48 m-4 mt-16">
                 <h1 className="text-black text-lg dark:text-white border-b-2 mb-4">About</h1>
