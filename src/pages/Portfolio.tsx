@@ -42,7 +42,7 @@ const Portfolio = () => {
                         <div className="flex flex-wrap gap-1 justify-center">
                             <span className="text-xs rounded-md bg-slate-200 p-1">JavaScript</span>
                             <span className="text-xs rounded-md bg-slate-200 p-1">Express</span>
-                            <span className="text-xs rounded-md bg-slate-200 p-1">Nodemon</span>
+                            <span className="text-xs rounded-md bg-slate-200 p-1">NodeJS</span>
                             <span className="text-xs rounded-md bg-slate-200 p-1">NPM</span>
                         </div>
                         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
