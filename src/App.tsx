@@ -6,6 +6,7 @@ import About from './pages/About';
 import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import BuildFooter from './components/Footer';
 
 const App:React.FunctionComponent = () => {
   const [darkTheme, setDarkTheme] = React.useState(false);
@@ -25,6 +26,7 @@ const App:React.FunctionComponent = () => {
       <Portfolio />
       <Resume />
       <Contact />
+      <BuildFooter />
     </div>
   );
 }
