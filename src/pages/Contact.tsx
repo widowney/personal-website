@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button , TextInput, Label} from 'flowbite-react';
+import { Button , TextInput, Label, Textarea} from 'flowbite-react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
@@ -31,7 +31,7 @@ const Contact = () => {
     }
 
     return (
-        <form className="flex flex-col gap-4" onSubmit={handleOnSubmit}>
+        <form className="flex flex-col gap-4 h-3/5  m-4 lg:m-20 xl:mr-64 xl:ml-64" onSubmit={handleOnSubmit}>
             <div>
                 <div className="mb-2 block">
                 <Label
@@ -62,14 +62,14 @@ const Contact = () => {
                 shadow={true}
                 />
             </div>
-            <div>
+            <div id="textarea">
                 <div className="mb-2 block">
                 <Label
                     htmlFor="message"
                     value="Message"
                 />
                 </div>
-                <TextInput
+                <Textarea
                 id="message"
                 name="user_message"
                 required={true}
