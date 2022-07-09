@@ -31,7 +31,7 @@ const Contact = () => {
     }
 
     return (
-        <form className="flex flex-col gap-4 h-3/5  m-4 lg:m-20 xl:mr-64 xl:ml-64" onSubmit={handleOnSubmit}>
+        <form className="flex flex-col gap-4 h-1/2 mb-5 m-4 xl:mr-64 xl:ml-64" onSubmit={handleOnSubmit} id="Contact">
             <div>
                 <div className="mb-2 block">
                 <Label
