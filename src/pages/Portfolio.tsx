@@ -10,7 +10,7 @@ const Portfolio = () => {
         <div className="min-h-screen flex flex-col items-center sm:mr-16 sm:ml-16" id="Portfolio">
             <span className="text-transparent">.</span>
             <h1 className="text-3xl text-center mb-4 border-b-2 w-1/2 mt-10 dark:text-white font-bold">Portfolio</h1>
-            <div className="flex w-full gap-2 flex-shrink-0 flex-wrap justify-center align-center h-80" id="portfolio-cards">
+            <div className="flex w-full gap-2 flex-shrink-0 flex-wrap justify-center align-center" id="portfolio-cards">
                 <div className="w-80">
                     <Card imgSrc={PersonalWebsite}>
                         <div className="flex flex-wrap gap-1 justify-center">
