@@ -5,7 +5,21 @@ const About = () => {
         <div className="min-h-screen w-full" id="About">
             <span className="text-transparent">.</span>
             <div className=" border-2 p-4 shadow-md rounded-md xl:mr-48 xl:ml-48 m-4 mt-16">
-                <h1 className="text-black text-2xl dark:text-white border-b-2 font-bold mb-10">About</h1>
+                <h1 className="text-black text-lg dark:text-white border-b-2 mb-4">About</h1>
+                <div className="mr-12 ml-12 leading-8">
+                    <h2 className="text-black text-2xl dark:text-white text-center font-bold"> Hi there, I'm Will Downey</h2>
+                    <p className="text-center dark:text-white ">
+                        I'm a Computer Science student and aspiring Software Developer at Virginia Tech.
+                        <br></br>
+                        Some things I'm currently working on:
+                        <ul>
+                            <li>-Building a full-stack cashier application for a local snack bar business</li>
+                            <li>-Learning backend web development</li>
+                            <li>-Taking a linear algebra course</li>
+                        </ul>
+                    </p>
+                </div>
+                
                 <div>
                     <h2 className="text-black text-xl dark:text-white border-b-2">Skills:</h2>
                     <div className="flex m-2 sm:m-10 flex-wrap justify-center gap-4">
