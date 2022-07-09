@@ -4,7 +4,7 @@ import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
 const SERVICE_ID = 'service_5yz2feh';
-const TEMPLATE_ID = 'service_5yz2feh'
+const TEMPLATE_ID = 'template_1tov9xw'
 const USER_ID = '0KpAtZAxG_NkkT235';
 
 const Contact = () => {
@@ -56,9 +56,8 @@ const Contact = () => {
                 />
                 </div>
                 <TextInput
-                id="password"
+                id="UserName"
                 name="user_name"
-                type="password"
                 required={true}
                 shadow={true}
                 />
