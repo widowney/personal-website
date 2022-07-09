@@ -1,9 +1,37 @@
 import React from 'react';
 import { Button , TextInput, Label} from 'flowbite-react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
+
+const SERVICE_ID = 'service_5yz2feh';
+const TEMPLATE_ID = 'service_5yz2feh'
+const USER_ID = '0KpAtZAxG_NkkT235';
 
 const Contact = () => {
+
+    const handleOnSubmit = (e: any) => {
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+        .then((result) => {
+          console.log(result.text);
+          Swal.fire({
+            title: 'Success!',
+            text: 'Email send succesfully',
+            timer: 5000
+          })
+        }, (error) => {
+          console.log(error.text);
+          Swal.fire({
+            title: 'Send failed :C',
+            text: 'Oops, something went wrong(blame it on the server)',
+            timer: 5000
+          })
+        });
+      e.target.reset()
+    }
+
     return (
-        <form className="flex flex-col gap-4">
+        <form className="flex flex-col gap-4" onSubmit={handleOnSubmit}>
             <div>
                 <div className="mb-2 block">
                 <Label
@@ -12,9 +40,10 @@ const Contact = () => {
                 />
                 </div>
                 <TextInput
-                id="email2"
+                id="email"
                 type="email"
-                placeholder="name@flowbite.com"
+                name="user_email"
+                placeholder="name@name.com"
                 required={true}
                 shadow={true}
                 />
@@ -22,12 +51,13 @@ const Contact = () => {
             <div>
                 <div className="mb-2 block">
                 <Label
-                    htmlFor="password2"
-                    value="Your password"
+                    htmlFor="name"
+                    value="Name"
                 />
                 </div>
                 <TextInput
-                id="password2"
+                id="password"
+                name="user_name"
                 type="password"
                 required={true}
                 shadow={true}
@@ -36,19 +66,19 @@ const Contact = () => {
             <div>
                 <div className="mb-2 block">
                 <Label
-                    htmlFor="repeat-password"
-                    value="Repeat password"
+                    htmlFor="message"
+                    value="Message"
                 />
                 </div>
                 <TextInput
-                id="repeat-password"
-                type="password"
+                id="message"
+                name="user_message"
                 required={true}
                 shadow={true}
                 />
             </div>
             <Button type="submit">
-                Register new account
+                Submit
             </Button>
         </form>
     );
