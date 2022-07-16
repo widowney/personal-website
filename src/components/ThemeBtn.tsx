@@ -7,7 +7,7 @@ type Props = {
 
 const ThemeBtn = ({darkTheme, setDarkTheme}: Props) => {
     return (
-        <button className="fixed bottom-0 right-0 mb-2 mr-2 bg-blue-700 rounded-full h-16 w-16 opacity-80 z-10" onClick={() => {
+        <button className="fixed bottom-0 right-0 mb-2 mr-2 bg-blue-700 rounded-full h-12 w-12 opacity-80 z-10" onClick={() => {
             const html = document.querySelector('html');
             html?.classList.toggle('dark');
             setDarkTheme(!darkTheme);
