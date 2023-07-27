@@ -41,7 +41,7 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 100,
+                            distance: 200,
                             duration: 0.4,
                         },
                         },
@@ -58,7 +58,7 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
                         width: 1,
                         },
                         collisions: {
-                        enable: true,
+                        enable: false,
                         },
                         move: {
                         direction: "none",
@@ -67,15 +67,15 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 3,
+                        speed: 1,
                         straight: false,
                         },
                         number: {
                         density: {
                             enable: true,
-                            area: 800,
+                            area: 400,
                         },
-                        value: 100,
+                        value: 20,
                         },
                         opacity: {
                         value: 0.5,
