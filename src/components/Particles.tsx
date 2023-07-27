@@ -75,7 +75,7 @@ const ParticlesContainer = ({darkTheme, setDarkTheme}: Props) => {
                             enable: true,
                             area: 400,
                         },
-                        value: 20,
+                        value: 30,
                         },
                         opacity: {
                         value: 0.5,
